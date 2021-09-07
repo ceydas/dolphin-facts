@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/viewPagerFragment">
+
+    <action
+        android:id="@+id/action_factsNextScreen_to_factsScreen"
+        app:destination="@id/factsScreen" />
+
+    <action
+        android:id="@+id/action_factsNextScreen_to_viewPagerFragment"
+        app:destination="@id/viewPagerFragment" />
+
+    <action
+        android:id="@+id/action_viewPagerFragment_to_factsScreen"
+        app:destination="@id/factsScreen"
+        app:enterAnim="@android:anim/slide_in_left"
+        app:popEnterAnim="@android:anim/slide_in_left"/>
+
+    <action
+        android:id="@+id/action_factsScreen_to_aboutScreen"
+        app:destination="@id/aboutScreen"
+        app:enterAnim="@android:anim/slide_in_left"
+        app:exitAnim="@android:anim/slide_out_right" />
+    <action
+        android:id="@+id/action_factsScreen_to_factsNextScreen2"
+        app:destination="@id/factsNextScreen" />
+
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.example.myapplication.ViewPagerFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager" >
+    </fragment>
+    <fragment
+        android:id="@+id/factsScreen"
+        android:name="com.example.myapplication.screens.FactsScreen"
+        android:label="fragment_facts_screen"
+        tools:layout="@layout/fragment_facts_screen" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/aboutScreen"
+        android:name="com.example.myapplication.screens.AboutScreen"
+        android:label="fragment_about_screen"
+        tools:layout="@layout/fragment_about_screen" >
+        <action
+            android:id="@+id/action_aboutScreen_to_factsScreen"
+            app:destination="@id/factsScreen" />
+        <action
+            android:id="@+id/action_aboutScreen_to_factsNextScreen"
+            app:destination="@id/factsNextScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/factsNextScreen"
+        android:name="com.example.myapplication.screens.FactsNextScreen"
+        android:label="FactsNextScreen" >
+
+
+    </fragment>
+</navigation>

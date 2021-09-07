@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="sea_blue">#22B4CB</color>
+    <color name="shadow_grey">#919191</color>
+    <color name="color_palette_1">#53CFDA</color>
+    <color name="color_palette_2">#EFF2E6</color>
+    <color name="color_palette_3">#FF7994</color>
+    <color name="color_palette_4">#FFC900</color>
+    <color name="color_palette_5">#FFED00</color>
+    <color name="color_palette_6">#FF8860</color>
+    <color name="color_palette_7">#F7D635</color>
+    <color name="color_palette_8">#D6E8D9</color>
+    <color name="color_palette_9">#F1C9C2</color>
+    <color name="color_palette_10">#1F3D51</color>
+    <color name="color_palette_11">#FF3747</color>
+    <color name="color_palette_12">#FF8B0F</color>
+    <color name="color_palette_13">#FFD600</color>
+    <color name="color_palette_14">#EAE45F</color>
+    <color name="color_palette_15">#DDF5C2</color>
+    <color name="color_palette_16">#FF458F</color>
+    <color name="color_palette_17">#FF8352</color>
+    <color name="color_palette_18">#DEE500</color>
+    <color name="color_palette_19">#00E1DF</color>
+    <color name="color_palette_20">#00C3AF</color>
+    <color name="color_palette_21">#ECF7DD</color>
+    <color name="color_palette_22">#4FCBBB</color>
+    <color name="color_palette_23">#2494CC</color>
+    <color name="color_palette_24">#EF39A7</color>
+    <color name="color_palette_25">#FFAE90</color>
+
+</resources>
