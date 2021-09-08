@@ -38,7 +38,7 @@ class ViewPagerFragment : Fragment() {
 
         val theViewPager = binding.viewPager
         binding.viewPager.adapter = adapter
-        /*
+
         val firstFragment = theViewPager.getChildAt(0) as RecyclerView
         theViewPager.setCurrentItem(1,false)
 
@@ -58,7 +58,7 @@ class ViewPagerFragment : Fragment() {
             }
         }
 
-         */
+
 
 
         return view

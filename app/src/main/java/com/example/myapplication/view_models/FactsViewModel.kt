@@ -71,8 +71,9 @@ class FactsViewModel ()
     }
 
     private fun resetColorsList(){
-        listOfColors = mutableListOf(R.color.color_palette_1, R.color.color_palette_2, R.color.color_palette_3, R.color.color_palette_4, R.color.color_palette_5, R.color.color_palette_6, R.color.color_palette_7, R.color.color_palette_8, R.color.color_palette_9, R.color.color_palette_10, R.color.color_palette_11, R.color.color_palette_12, R.color.color_palette_13, R.color.color_palette_14, R.color.color_palette_15, R.color.color_palette_16, R.color.color_palette_17, R.color.color_palette_18, R.color.color_palette_19, R.color.color_palette_20, R.color.color_palette_21, R.color.color_palette_22, R.color.color_palette_23, R.color.color_palette_24, R.color.color_palette_25
-        )
+        listOfColors = mutableListOf(R.color.color_palette_3, R.color.color_palette_12, R.color.color_palette_11)
+            //(R.color.color_palette_1, R.color.color_palette_2, R.color.color_palette_3, R.color.color_palette_4, R.color.color_palette_5, R.color.color_palette_6, R.color.color_palette_7, R.color.color_palette_8, R.color.color_palette_9, R.color.color_palette_10, R.color.color_palette_11, R.color.color_palette_12, R.color.color_palette_13, R.color.color_palette_14, R.color.color_palette_15, R.color.color_palette_16, R.color.color_palette_17, R.color.color_palette_18, R.color.color_palette_19, R.color.color_palette_20, R.color.color_palette_21, R.color.color_palette_22, R.color.color_palette_23, R.color.color_palette_24, R.color.color_palette_25
+        //)
         listOfColors.shuffle()
     }
 

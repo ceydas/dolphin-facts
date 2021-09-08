@@ -3,6 +3,7 @@ package com.example.myapplication
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
+import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.adapter.FragmentViewHolder
 import com.example.myapplication.screens.FactsScreen
@@ -11,8 +12,8 @@ class ViewPagerAdapter(list: ArrayList<Fragment>, fm: FragmentManager, lifecycle
 
 
     private val fragmentList : List<Fragment> =
-        list
-        //listOf(list.last()) + list + listOf(list.first())
+        //list
+        listOf(list.last()) + list + listOf(list.first())
 
 
     override fun getItemCount(): Int {

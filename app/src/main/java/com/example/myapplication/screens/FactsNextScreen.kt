@@ -1,5 +1,6 @@
 package com.example.myapplication.screens
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -58,8 +59,8 @@ class FactsNextScreen : Fragment() {
         binding.imgDolphin.setImageResource(viewModel.image)
         binding.tvDolphinName.text = viewModel.dolphinName
         binding.tvFact.text = viewModel.fact
-        binding.tvFact.setTextColor(viewModel.colorFact)
-        binding.tvDolphinName.setTextColor(viewModel.colorName)
+        binding.tvFact.setTextColor(resources.getColor(viewModel.colorFact))
+        binding.tvDolphinName.setTextColor(resources.getColor(viewModel.colorName))
     }
 
 
