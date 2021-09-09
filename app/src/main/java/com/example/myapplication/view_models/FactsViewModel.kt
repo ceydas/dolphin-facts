@@ -10,14 +10,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
-import androidx.navigation.fragment.NavHostFragment
-import androidx.viewpager.widget.ViewPager
-import com.example.myapplication.Dolphin
 import com.example.myapplication.R
-import com.example.myapplication.ViewPagerAdapter
-import com.example.myapplication.screens.FactsScreenDirections
-import java.io.InputStream
+
 
 class FactsViewModel ()
     : ViewModel() {

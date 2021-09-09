@@ -36,5 +36,9 @@
     <color name="color_palette_23">#2494CC</color>
     <color name="color_palette_24">#EF39A7</color>
     <color name="color_palette_25">#FFAE90</color>
+    <color name="scrollbar_thumb_primary">#FF8B0F</color>
+    <color name="scrollbar_thumb_secondary">#FF8860</color>
+    <color name="scrollbar_track_primary">#faf2e8</color>
+    <color name="scrollbar_track_secondary">#ffd7a6</color>
 
 </resources>

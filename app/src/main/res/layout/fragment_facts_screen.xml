@@ -16,73 +16,72 @@
         tools:context=".screens.FactsScreen"
         android:background="@color/baby_blue">
 
+        
+
 
         <ImageView
             android:id="@+id/img_dolphin"
             android:layout_width="200dp"
             android:layout_height="200dp"
-            android:layout_marginTop="20dp"
             app:imageResource="@{viewmodel.image}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.118" />
 
-        <TextView
-            android:id="@+id/tv_fact"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_margin="20dp"
-            android:ellipsize="end"
-            android:fontFamily="@font/berlin_sans"
-            android:gravity="center"
-            android:maxLength="250"
-            android:shadowRadius="4"
-            android:shadowColor="@color/shadow_light_grey"
-            android:shadowDx="5"
-            android:shadowDy="5"
-            android:text="@{viewmodel.fact}"
-            android:textColor="@color/white"
-            android:textSize="32sp"
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_marginBottom="20dp"
+            style="@style/scrollbar_shape_style"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
+            android:clipChildren="false"
             app:layout_constraintTop_toBottomOf="@id/img_dolphin"
-            app:layout_constraintVertical_bias="0.0"
-            tools:text="This is a fact." />
+            app:layout_constraintVertical_bias="0.02">
 
-        <ImageButton
-            android:id="@+id/button_next_fact"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:scaleType="fitCenter"
-            android:shadowColor="@color/shadow_grey"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            <TextView
+                android:id="@+id/tv_fact"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/berlin_sans"
+                android:gravity="center"
+                android:shadowColor="@color/shadow_light_grey"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowRadius="4"
+                android:text="@{viewmodel.fact}"
+                android:textColor="@color/white"
+                android:textSize="27sp"
 
-            app:layout_constraintHorizontal_bias="1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1"
-            app:srcCompat="@drawable/ic_arrow_forward" />
+                tools:text="This is a fact." />
+
+        </ScrollView>
 
         <TextView
             android:id="@+id/tv_dolphin_name"
-            android:textSize="70dp"
-            android:shadowColor="@color/shadow_grey"
-            android:shadowDy="10"
-            android:shadowDx="10"
-            android:shadowRadius="10"
             android:layout_width="match_parent"
-            android:gravity="center"
             android:layout_height="wrap_content"
+            android:gravity="center"
+            android:shadowColor="@color/shadow_grey"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="10"
             android:text="Lucy"
             android:textColor="@color/white"
-            app:layout_constraintBottom_toTopOf="@+id/tv_fact"
+            android:textSize="55dp"
+            app:layout_constraintBottom_toTopOf="@+id/scrollView"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0" />

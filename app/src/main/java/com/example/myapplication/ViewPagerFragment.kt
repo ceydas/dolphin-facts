@@ -1,18 +1,12 @@
 package com.example.myapplication
 
+import ZoomOutPageTransformer
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.view.size
-import androidx.navigation.fragment.findNavController
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import androidx.viewpager2.widget.ViewPager2
 import com.example.myapplication.databinding.FragmentViewPagerBinding
-import com.example.myapplication.screens.AboutScreen
-import com.example.myapplication.screens.FactsNextScreen
 import com.example.myapplication.screens.FactsScreen
 
 
@@ -31,40 +25,33 @@ class ViewPagerFragment : Fragment() {
         _binding = FragmentViewPagerBinding.inflate(inflater, container, false)
         val view = binding.root
 
-        val fragmentList = arrayListOf<Fragment>(FactsScreen(), FactsNextScreen(),AboutScreen())
+        val fragmentList = arrayListOf<Fragment>(FactsScreen())
         val adapter = ViewPagerAdapter(fragmentList,
             requireActivity().supportFragmentManager,
             lifecycle)
 
         val theViewPager = binding.viewPager
         binding.viewPager.adapter = adapter
+        theViewPager.setPageTransformer( ZoomOutPageTransformer())
 
+        /*
         val firstFragment = theViewPager.getChildAt(0) as RecyclerView
         theViewPager.setCurrentItem(1,false)
+        val itemCount = adapter.itemCount
 
-            val itemCount = adapter.itemCount
         firstFragment.apply{
             addOnScrollListener( InfiniteScrollBehaviour(itemCount,
                 layoutManager as LinearLayoutManager))
         }
 
-        theViewPager.adapter = adapter
 
-        fun getCurrentItem(): Int {
-            return when (theViewPager.currentItem) {
-                0 -> itemCount - 3
-                itemCount - 1 -> 0
-                else -> theViewPager.currentItem - 1
-            }
-        }
-
-
-
+       */
 
         return view
     }
 
 
+    /*
     inner class InfiniteScrollBehaviour(
         private val itemCount: Int,
         private val layoutManager: LinearLayoutManager
@@ -85,6 +72,8 @@ class ViewPagerFragment : Fragment() {
         }
     }
 
+
+     */
 
 
 
