@@ -22,7 +22,7 @@ class ViewPagerAdapter(list: ArrayList<Fragment>, fm: FragmentManager, lifecycle
 
     override fun createFragment(position: Int): Fragment {
         if ( position < 60)
-            fragmentList.add(position, FactsScreen())
+            fragmentList.add(FactsScreen())
         return fragmentList[position]
     }
 

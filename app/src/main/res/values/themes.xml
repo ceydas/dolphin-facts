@@ -7,7 +7,8 @@
         <item name="android:windowBackground">@color/baby_blue</item>
         <item name="colorPrimary">@color/color_palette_25</item>
         <item name="colorPrimaryVariant">@color/sea_blue</item>
-        <item name="colorOnPrimary">@color/sea_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSurface">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/color_palette_11</item>
         <item name="colorSecondaryVariant">@color/white</item>

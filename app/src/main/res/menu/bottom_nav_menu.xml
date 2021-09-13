@@ -6,6 +6,11 @@
         android:icon="@drawable/ic_baseline_tips_and_updates_24"
         />
     <item
+        android:id="@+id/blank"
+        android:title=""
+        />
+
+    <item
         android:id="@+id/miAbout"
         android:title="About"
         android:icon="@drawable/ic_info"/>

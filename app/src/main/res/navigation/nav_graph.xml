@@ -3,24 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/viewPagerFragment">
+    app:startDestination="@id/miFacts">
+
+    <action
+        android:id="@+id/action_factsScreen_to_aboutScreen"
+        app:destination="@id/miAbout" />
+
+
+    <action
+        android:id="@+id/action_aboutScreen_to_factsScreen"
+        app:destination="@id/miFacts" />
 
     <fragment
-        android:id="@+id/viewPagerFragment"
-        android:name="com.example.myapplication.ViewPagerFragment"
-        android:label="fragment_view_pager"
-        tools:layout="@layout/fragment_view_pager" >
-        <action
-            android:id="@+id/action_viewPagerFragment_to_aboutScreen"
-            app:destination="@id/aboutScreen" />
+        android:id="@+id/miAbout"
+        android:name="com.example.myapplication.screens.AboutScreen"
+        android:label="About"
+        tools:layout="@layout/fragment_about_screen" >
     </fragment>
     <fragment
-        android:id="@+id/aboutScreen"
-        android:name="com.example.myapplication.screens.AboutScreen"
-        android:label="fragment_about_screen"
-        tools:layout="@layout/fragment_about_screen" >
-        <action
-            android:id="@+id/action_aboutScreen_to_viewPagerFragment"
-            app:destination="@id/viewPagerFragment" />
-    </fragment>
+        android:id="@+id/miFacts"
+        android:name="com.example.myapplication.ViewPagerFragment"
+        android:label="Facts"
+        tools:layout="@layout/fragment_view_pager" />
 </navigation>

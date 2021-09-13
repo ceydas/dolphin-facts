@@ -16,15 +16,13 @@
         tools:context=".screens.FactsScreen"
         android:background="@color/baby_blue">
 
-        
-
-
         <ImageView
             android:id="@+id/img_dolphin"
             android:layout_width="200dp"
             android:layout_height="200dp"
             app:imageResource="@{viewmodel.image}"
             app:layout_constraintBottom_toBottomOf="parent"
+            android:backgroundTint="#00FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -34,35 +32,39 @@
         <ScrollView
             android:id="@+id/scrollView"
             android:layout_width="wrap_content"
-            android:layout_height="250dp"
-            android:layout_marginBottom="20dp"
-            style="@style/scrollbar_shape_style"
+            android:layout_height="270dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             android:clipChildren="false"
+            android:scrollbarThumbVertical="@color/scrollbar_thumb_primary"
+            android:scrollbarFadeDuration="2000"
+            android:scrollbarDefaultDelayBeforeFade="1000"
+            android:scrollbarSize="5dp"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
             app:layout_constraintTop_toBottomOf="@id/img_dolphin"
             app:layout_constraintVertical_bias="0.02">
 
             <TextView
                 android:id="@+id/tv_fact"
                 android:layout_width="match_parent"
-                android:layout_height="450dp"
+                android:layout_height="600dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
+                android:paddingBottom="20dp"
+                android:clipToOutline="true"
                 android:layout_marginRight="20dp"
                 android:ellipsize="end"
                 android:fontFamily="@font/berlin_sans"
                 android:gravity="center"
+                android:shadowDy="2"
+                android:shadowDx="2"
+                android:shadowRadius="1"
                 android:shadowColor="@color/shadow_light_grey"
-                android:shadowDx="5"
-                android:shadowDy="5"
-                android:shadowRadius="4"
                 android:text="@{viewmodel.fact}"
                 android:textColor="@color/white"
                 android:textSize="27sp"
-
                 tools:text="This is a fact." />
 
         </ScrollView>
@@ -72,10 +74,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:fontFamily="@font/berlin_sans"
             android:shadowColor="@color/shadow_grey"
-            android:shadowDx="10"
-            android:shadowDy="10"
-            android:shadowRadius="10"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1"
             android:text="Lucy"
             android:textColor="@color/white"
             android:textSize="55dp"
@@ -86,5 +89,33 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0" />
 
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            >
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_delete"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="top|right"
+                app:fabCustomSize="60dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/ic_delete"
+                android:scaleType="center"
+                app:maxImageSize="30dp"
+                />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 </layout>

@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/Users/ceyda.sahin/AndroidStudioProjects/MyApplication3/app/src/main/res/drawable/ic_arrow_back.xml" value="0.2546875" />
         <entry key="..\:/Users/ceyda.sahin/AndroidStudioProjects/MyApplication3/app/src/main/res/drawable/ic_arrow_forward.xml" value="0.2546875" />
+        <entry key="..\:/Users/ceyda.sahin/AndroidStudioProjects/MyApplication3/app/src/main/res/drawable/ic_delete.xml" value="0.2703125" />
         <entry key="..\:/Users/ceyda.sahin/AndroidStudioProjects/MyApplication3/app/src/main/res/drawable/scrollbar_shape_style.xml" value="0.18333333333333332" />
         <entry key="..\:/Users/ceyda.sahin/AndroidStudioProjects/MyApplication3/app/src/main/res/drawable/scrollbar_vertical_thumb.xml" value="0.18333333333333332" />
         <entry key="..\:/Users/ceyda.sahin/AndroidStudioProjects/MyApplication3/app/src/main/res/drawable/scrollbar_vertical_track.xml" value="0.18333333333333332" />
@@ -12,6 +13,7 @@
         <entry key="..\:/Users/ceyda.sahin/AndroidStudioProjects/MyApplication3/app/src/main/res/font/berlin_sans.xml" value="0.24351851851851852" />
         <entry key="..\:/Users/ceyda.sahin/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/ceyda.sahin/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/content_main.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/ceyda.sahin/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/create_fact.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ceyda.sahin/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/empty_fragment.xml" value="0.1984375" />
         <entry key="..\:/Users/ceyda.sahin/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/fragment_about_screen.xml" value="0.20697463768115942" />
         <entry key="..\:/Users/ceyda.sahin/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/fragment_facts_next_screen.xml" value="0.15260416666666668" />
@@ -21,6 +23,7 @@
         <entry key="..\:/Users/ceyda.sahin/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/fragment_view_pager.xml" value="0.1793478260869565" />
         <entry key="..\:/Users/ceyda.sahin/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/splash_fragment.xml" value="0.1793478260869565" />
         <entry key="..\:/Users/ceyda.sahin/AndroidStudioProjects/MyApplication3/app/src/main/res/menu/bottom_nav_menu.xml" value="0.264" />
+        <entry key="..\:/Users/ceyda.sahin/AndroidStudioProjects/MyApplication3/app/src/main/res/menu/create_menu.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
